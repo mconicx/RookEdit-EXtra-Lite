@@ -12,6 +12,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 
     ui->setupUi(this);
 
+    QMessageBox::information(this, tr("Notice"), tr("This is a Work in Progress. Some features may not work properly."));
+
     // Dialogs
     mSettingsDialog = new SettingsDialog(this);
     mSettingsDialog->setReferenceTextEdit(ui->codeEdit);
